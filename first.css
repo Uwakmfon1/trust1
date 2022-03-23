@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-decoration: none;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+.flexnav{
+    display: none;
+}
+nav{
+    display: flex;
+    /* background-color: #111; */
+    background-image: url('pics/chickenlaps.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav p{
+    color: white;
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 6em;
+    font-size: 35px;
+}
+
+
+nav::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:black ;
+    opacity: 0.6;
+}
+
+
+/* for the prelo's logo */
+nav h2{
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 70%;
+    color: #fff;
+    position: absolute;
+}
+
+
+.sidebar{
+    height: 50%;
+    width: 0; /*0 width, but will change this with javascript*/
+    position: fixed;/*to stay fixed*/
+    z-index: 1; /*to stay on top*/
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;/*disable horizontal scrolling*/
+    padding-top: 60px;/* to place content 60px from top*/
+    transition: 0.5s;/*time to slide*/
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color: brown;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.openbtn{
+    font-size: 30px;
+    margin-left: 2px;
+    margin-top: 2px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #111;
+    color: #fff;
+    width: 30px;
+    /* padding-right: 10px 15px; */
+    border: none;
+}
+
+.openbtn:hover{
+    background-color: #444;
+}
+#main{
+    transition: margin-left .5s; /*if u want a transition effect*/
+    padding: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+
+
+
+h2{
+    color: white;
+    position: relative;
+}
+
+h3{
+    color: white;
+    position: relative;
+}
+
+
+button{
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+    width: 7em;
+    height: 4em;
+    border-radius: 7px;
+    margin-left: 10em;
+}
+button a{
+    color: black;
+    text-decoration: none;
+}
+button:hover{
+    background-color: rgb(214, 139, 86);
+}
+
+
+
+@media screen and (min-width:992px){
+   *{
+       box-sizing: border-box;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       text-decoration: none;
+       color: #fff;
+   }
+
+   .flexnav{
+    display: flex;
+    
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    
+}
+.flexnav ul{
+    display: inline-flex;
+    position: absolute;
+    margin-left: 60%;
+}
+.flexnav ul a{
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+}
+.flexnav ul a:hover{
+    color: brown;
+}
+
+.flexnav ul li{
+    margin: 15px;
+}
+
+.flexnav  h3{
+    color: #fff; 
+    position: relative;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 2%;
+    font-family: cursive;
+}
+
+
+    nav{
+        background-image: url('pics/chickenlaps.jpeg');
+        height: 100vh;
+        
+        
+    }
+    nav p{
+        font-size: 50px;
+        position: absolute;
+    }
+    nav::before{
+        position: absolute;
+        display:block ;
+        margin-top: 66px;
+        content: "";
+        bottom: 0;
+        right: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0.6;
+        height: 100vh;
+    }
+    .closednav{
+        display: none;
+    }
+
+    
+   h2{
+        color: #fff;
+        display: none;
+        position: relative;
+        text-transform: lowercase;
+        font-size: 2em;
+        font-weight: 700;
+        margin-left: 80%;
+        font-family: cursive;
+    }
+
+    
+  
+    
+}

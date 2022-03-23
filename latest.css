@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    /* text-decoration: none; */
+    color: black;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+nav{
+    display: flex;
+     background-color: #111; 
+    /* background-image: url('pics/chefs.jpg'); */
+     height: 80px; 
+    width: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+nav p{
+    color: white;
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 6em;
+    font-size: 35px;
+}
+
+
+nav::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color:black ; */
+    height: 63.5vh;
+    opacity: 0.6;
+}
+
+
+/* for the prelo's logo */
+nav h2{
+    font-family: cursive;
+    font-size: 25px;
+    margin: 2px 14em;
+    color: #fff;
+    position: absolute;
+}
+
+.sidebar{
+    height: 50%;
+    width: 0; /*0 width, but will change this with javascript*/
+    position: fixed;/*to stay fixed*/
+    z-index: 1; /*to stay on top*/
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;/*disable horizontal scrolling*/
+    padding-top: 60px;/* to place content 60px form top*/
+    transition: 0.5s;/*time to slide*/
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color: brown;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.openbtn{
+    font-size: 30px;
+    margin-left: 2px;
+    margin-top: 2px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #111;
+    color: #fff;
+    width: 30px;
+    /* padding-right: 10px 15px; */
+    border: none;
+}
+
+.openbtn:hover{
+    background-color: #444;
+}
+#main{
+    transition: margin-left .5s; /*if u want a transition effect*/
+    padding: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+
+.background{
+    display: flex;
+    background-image: url('pics/chef2.jpg');
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+}
+
+
+
+.chickensoup{
+    background-color: #fff;
+    margin: 50px 40px;
+    /* padding: 30px; */
+}
+
+
+
+
+
+.chickensoup h2:nth-child(1){
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.chickensoup button{
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    margin-top:10px;
+}
+
+
+.newAccess p{
+    position: relative;
+    margin: 30px;
+    margin-top: 10px;
+    position: relative;
+    color: #111;
+}
+.newAccess button{
+    position: relative;
+    margin: 30px;
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    margin-top:10px;
+    color: #111;
+}
+.newAccess h2{
+    margin: 30px;
+    position: relative;
+    position: relative;
+    color: #111;
+}
+
+.update{
+    margin: 30px;
+}
+.update button{
+    width: 150px;
+    height: 30px;
+    margin-top:10px;
+    color:black;
+    font-weight: 700;
+    background-color: transparent;
+}
+/* beginning of footer*/
+footer{
+    /* margin: 20px; */
+    padding-left: 30px;
+    margin-top: 40px;
+    background-color: #ccc8c8;
+ 
+ width: 100%;   /* background-size: cover; */
+}
+footer h1{
+    padding-top: 30px;
+}
+ 
+footer ul li{
+    text-decoration: none;
+    margin: 20px;
+}
+
+footer ul  a{
+    text-decoration: none;
+    font-weight: 520;
+    color: #111;
+}
+.reserve button{
+    background-color: transparent;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    font-weight: 600;
+    margin-left: 60px;
+}
+
+.flexnav{
+    display: none;
+}
+
+
+@media screen and (min-width:992px){
+   *{
+       margin: 0;
+       padding-top:-10% ;
+       list-style: none;
+       box-sizing: border-box;
+   }
+   nav{
+       display: none;
+   }
+   nav h2{
+       display: none;
+   }
+   .closednav{
+       display: none;
+   }
+  .sidebar{
+      display: none;
+  }   
+
+.flexnav{
+    display: flex;
+    padding-top: 0;
+    background-color: black;
+    height: 80px;
+}
+
+.flexnav h3{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+}
+
+.flexnav ul {
+    display: inline-flex;
+    position: absolute;
+    margin: 20px;
+    margin-left: 60%;
+}
+
+.flexnav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.flexnav ul li{
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+.container{
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+
+.container .secondside{
+    margin-top: 50px;
+}
+
+.location p{
+    margin-left: 10px;
+}
+  
+
+
+
+ }
